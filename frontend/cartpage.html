@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <h2>MyBOOKs</h2>
+        <a href="/frontend/index.html" class="active">Home</a>
+        <a href="/frontend/cartpage.html">Cart</a>
+        <a href="#contact">Contact me </a>
+        <a href="#about">Blog</a>
+        <a href="/frontend/login.html">Login</a>
+        <a href="#about">Logout</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i style="color: black;" class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-heading">
+            <h1>Your Cart</h1>
+        </div>
+        <div class="cart-product-card">
+            <div class="cart-product-image">
+                <img src="/images/cover1.jpg" alt="Book Cover">
+            </div>
+            <div class="cart-product-desc">
+                <h3>The Struggle Of My Life</h3>
+                <h4><i class="fa fa-user"></i> <b>Krishna Upadhyay</b></h4>
+            </div>
+
+            <div class="cart-product-price">
+                <p><i class="fa fa-inr"></i> 67.00 only</p>
+                <button><i class="fa fa-trash"></i></button>
+            </div>
+            <div class="quantity">
+                <button><i class="fa fa-minus"></i></button>
+                <input type="text" value="1">
+                <button><i class="fa fa-plus"></i></button>
+            </div>
+        </div>
+        <div class="cart-product-card">
+            <div class="cart-product-image">
+                <img src="/images/cover1.jpg" alt="Book Cover">
+            </div>
+            <div class="cart-product-desc">
+                <h3>The Struggle Of My Life</h3>
+                <h4><i class="fa fa-user"></i> <b>Krishna Upadhyay</b></h4>
+            </div>
+
+            <div class="cart-product-price">
+                <p><i class="fa fa-inr"></i> 67.00 only</p>
+                <button><i class="fa fa-trash"></i></button>
+            </div>
+            <div class="quantity">
+                <button><i class="fa fa-minus"></i></button>
+                <input type="text" value="1">
+                <button><i class="fa fa-plus"></i></button>
+            </div>
+        </div>
+        <div class="amount-table">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td><i class="fa fa-inr"></i> 134.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td><i class="fa fa-inr"></i> 0.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><i class="fa fa-inr"></i> 134.00</td>
+                </tr>
+            </table>
+
+            <button>Proceed to Checkout</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

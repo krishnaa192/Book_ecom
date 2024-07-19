@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 6rem;
+  align-items: center;
+}
+.topnav h2 {
+  margin-right: auto;
+}
+.topnav a {
+  color: #150101;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover, .topnav a.active {
+  color: black;
+}
+.topnav .icon {
+  display: none;
+}
+
+.cart-heading {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.cart-container {
+ display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.cart-product-card {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+.cart-product-image img {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.cart-product-desc {
+  flex: 1;
+  margin-left: 1rem;
+}
+.cart-product-desc h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.cart-product-desc h4 {
+  margin: 0;
+  font-weight: normal;
+  color: gray;
+  font-size: 1rem;
+}
+.cart-product-price {
+  text-align: right;
+  display: flex;
+  flex-direction:row;
+}
+.cart-product-price p {
+  color: green;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.2rem;
+}
+.cart-product-price button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.quantity input{
+  width: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+
+}
+.amount-table {
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.amount-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.amount-table td {
+  padding: 10px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.amount-table td:last-child {
+  text-align: right; /* Align the amount to the right */
+  font-weight: bold;
+  color: green; /* You can customize this color if needed */
+}
+
+.amount-table td:first-child {
+  font-weight: bold; /* Make subtotal, shipping, total bold */
+}
+
+.amount-table i {
+  margin-right: 5px; /* Space between currency icon and amount */
+}
+.amount-table button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Some padding */
+  border: none; /* Remove borders */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  width: 100%; /* Full width */
+  margin-top: 1rem; /* Add some top margin */
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+      flex-direction: column;
+      padding: 1rem;
+  }
+  .topnav h2 {
+      margin-right: 0;
+      margin-bottom: 1rem;
+  }
+  .topnav a:not(:first-child) {
+      display: none;
+  }
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+  .topnav.responsive {
+      position: relative;
+  }
+  .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+}
